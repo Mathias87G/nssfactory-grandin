@@ -14,12 +14,6 @@ $(document).ready(function () {
             img: "https://images.pexels.com/photos/5675245/pexels-photo-5675245.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             date: "23 settembre 2018",
             title: "Other Days"
-        },
-
-        {
-            img: "https://images.pexels.com/photos/5675245/pexels-photo-5675245.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-            date: "23 settembre 2018",
-            title: "Other Days"
         }
 
     ]
