@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    min-height: 80px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color:#d0c5b6;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.navbar {
+    color:black;
+    width: calc(100% - 100px);
+    font-family: Montserrat;
+    font-weight: 700;
+    ul {
+        width: 100%;
+        justify-content: space-around;
+        li {
+            a {
+                color: black;
+                &:hover {
+                    color: #d0c5b6;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        display: block;
+        min-height: 160px;
+        .logo {
+            height: 80px;
+            width: 100%;
+        }
+        .navbar {
+            min-height: 80px;
+            width: 100%;
+            font-weight: 700;
+            justify-content: center;
+            text-align: center;
+            .navbar-toggler {
+                outline: none;
+                font-weight: 700;
+            }
+        }
+    }
+  }

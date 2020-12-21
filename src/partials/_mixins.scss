@@ -1,0 +1,49 @@
+@mixin flex-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin button {
+    width: 240px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: transparent;
+    padding: 10px 0;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@mixin form-input {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+@mixin h6-bold {
+    font-family: Montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@mixin h3-cap {
+    font-size: 48px;
+    text-transform: capitalize;
+}
+
+@mixin p-grey {
+    font-size: 18px;
+    color: #808080;
+}

@@ -1,0 +1,97 @@
+// Media Queries
+
+@media screen and (max-width: 991px) {
+
+    .landing {
+        min-height: calc(100vh - 160px);
+
+        .landing-text {
+            padding: $std-padding 0;
+
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    .container {
+        max-width: 960px;
+
+        .history {
+
+            .history-text {
+                text-align: center;
+            }
+
+            .history-squares-ctr .row .h-s-img {
+                display: none;
+            }
+        }
+
+        .press .row {
+
+            .press-square-left {
+                background-color: #f8f8f8;
+                height: 450px;
+                @include flex-text;
+
+                .press-sqr-txt {
+                    @include flex-text;
+                    text-align: center;
+        
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .press-square-right {
+                @include flex-text;
+
+                .press-slider {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    @include flex-text;
+                    text-align: center;
+    
+                    .slider-txt {
+                        padding-left: 0;
+                        padding-top: 10px;
+    
+                        .slider-title {
+                            width: 100%;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .watches-grid {
+            height: 350px;
+        }
+    }
+
+    footer .contacts {
+        padding-left: $std-padding;
+        height: 400px;
+    }
+}
+
+  @media screen and (max-width: 767px) {
+    .container {
+        
+        .watches-grid {
+            height: 300px;
+    
+            .watch-square-ctr {
+                display: none;
+            }
+        }
+    } 
+
+    footer .credits {
+        @include flex-text;
+    }
+}
